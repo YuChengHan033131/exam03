@@ -1,12 +1,15 @@
 #include "mbed.h"
 #include "accelerometer.h"
+#include "mbed_rpc.h"
 
 Thread thread1;
 EventQueue queue1;
+float Vbatch[1000]=0;
+int Vcount=0;
 void getVelocity(){
     float x,y,z;
     accelerometer(x,y,z);
-    float velocity=z*0.1;
+    if(Vcount<=1000)Vbatch[Vcount++]=z*0.1;
 }
 
 int main(){
