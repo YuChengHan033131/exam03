@@ -40,6 +40,7 @@ int main(){
     pc.baud(9600);
     xbee.baud(9600);
     t.start(callback(&queue, &EventQueue::dispatch_forever));
+    xbee.attach(xbee_rx_interrupt, Serial::RxIrq);
 
 }
 void pc_rx_interrupt(void)
