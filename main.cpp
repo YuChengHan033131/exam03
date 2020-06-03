@@ -1,15 +1,22 @@
 #include "mbed.h"
 #include "accelerometer.h"
 #include "mbed_rpc.h"
+#include <math.h> 
 
 Thread thread1;
 EventQueue queue1;
-float Vbatch[1000]=0;
+float Vbatch[1000]=0;//Vbatch=velocity batch
 int Vcount=0;
 void getVelocity(){
     float x,y,z;
     accelerometer(x,y,z);
-    if(Vcount<=1000)Vbatch[Vcount++]=z*0.1;
+    if(Vcount<=1000)Vbatch[Vcount++]=sqrt(x*x+y*y)*0.1;
+}
+
+void getVbatch(Arguments *in, Reply *out);
+RPCFunction rpcf(&getVbatch,"getVbatch");
+void getVbatch(Arguments *in, Reply *out){
+
 }
 
 int main(){
