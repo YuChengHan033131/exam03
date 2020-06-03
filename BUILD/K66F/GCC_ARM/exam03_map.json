@@ -1,0 +1,98 @@
+[
+    {
+        "module": "../..",
+        "size": {
+            ".text": 36561,
+            ".data": 473,
+            ".bss": 6682,
+            ".text-delta": 36561,
+            ".data-delta": 473,
+            ".bss-delta": 6682
+        }
+    },
+    {
+        "module": "BUILD/K66F",
+        "size": {
+            ".text": 1378,
+            ".data": 4,
+            ".bss": 4836,
+            ".text-delta": 1378,
+            ".data-delta": 4,
+            ".bss-delta": 4836
+        }
+    },
+    {
+        "module": "[fill]",
+        "size": {
+            ".text": 174,
+            ".data": 14,
+            ".bss": 37,
+            ".text-delta": 174,
+            ".data-delta": 14,
+            ".bss-delta": 37
+        }
+    },
+    {
+        "module": "[lib]/c.a",
+        "size": {
+            ".text": 24885,
+            ".data": 2472,
+            ".bss": 89,
+            ".text-delta": 24885,
+            ".data-delta": 2472,
+            ".bss-delta": 89
+        }
+    },
+    {
+        "module": "[lib]/gcc.a",
+        "size": {
+            ".text": 3272,
+            ".data": 0,
+            ".bss": 0,
+            ".text-delta": 3272,
+            ".data-delta": 0,
+            ".bss-delta": 0
+        }
+    },
+    {
+        "module": "[lib]/m.a",
+        "size": {
+            ".text": 194,
+            ".data": 1,
+            ".bss": 0,
+            ".text-delta": 194,
+            ".data-delta": 1,
+            ".bss-delta": 0
+        }
+    },
+    {
+        "module": "[lib]/misc",
+        "size": {
+            ".text": 180,
+            ".data": 4,
+            ".bss": 28,
+            ".text-delta": 180,
+            ".data-delta": 4,
+            ".bss-delta": 28
+        }
+    },
+    {
+        "module": "[lib]/nosys.a",
+        "size": {
+            ".text": 32,
+            ".data": 0,
+            ".bss": 0,
+            ".text-delta": 32,
+            ".data-delta": 0,
+            ".bss-delta": 0
+        }
+    },
+    {
+        "summary": {
+            "static_ram": 14640,
+            "static_ram_delta": 14640,
+            "total_flash": 69644,
+            "total_flash_delta": 69644
+        }
+    }
+]

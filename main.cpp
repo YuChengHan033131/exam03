@@ -16,7 +16,7 @@ void pc_rx(void);
 void xbee_rx_interrupt(void);
 void xbee_rx(void);
 
-float Vbatch[1000]=0;//Vbatch=velocity batch
+float Vbatch[1000]={0};//Vbatch=velocity batch
 int Vcount=0;
 void getVelocity(){
     float x,y,z;
@@ -35,7 +35,7 @@ void getVbatch(Arguments *in, Reply *out){
 int main(){
     
     thread1.start(callback(&queue1,&EventQueue::dispatch_forever));
-    queue1.call_every(100,getVelocity)
+    queue1.call_every(100,getVelocity);
 
     pc.baud(9600);
     xbee.baud(9600);
