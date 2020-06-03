@@ -30,6 +30,7 @@ void getVbatch(Arguments *in, Reply *out){
     for(int i=0;i<Vcount;i++){
         xbee.printf("%f\r\n",Vbatch[i]);
     }
+    xbee.printf("END");
 }
 
 int main(){
